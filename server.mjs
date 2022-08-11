@@ -9,7 +9,7 @@ const port = process.env.PORT ||  3000;
 
 let users= [];
 
-app.post("/user", (req, res) => {
+app.post("/users", (req, res) => {
 
     console.log(req.body);
 
@@ -18,15 +18,15 @@ app.post("/user", (req, res) => {
     res.send("user is created");
 })
 
-app.get("/user", (req, res) => {
+app.get("/users", (req, res) => {
     res.send(users);
 })
 
-app.put("/user", (req, res) => {
+app.put("/users", (req, res) => {
     res.send("your user is modified");
 })
 
-app.delete("/user", (req, res) => {
+app.delete("/users", (req, res) => {
     res.send("your user is modified");
 })
 
