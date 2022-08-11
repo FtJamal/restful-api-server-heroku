@@ -7,7 +7,7 @@ app.use (cors());
 
 const port = process.env.PORT ||  3000;
 
-let users= []
+let users= [];
 
 app.post("/user", (req, res) => {
 
